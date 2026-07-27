@@ -1,0 +1,218 @@
+/* ==========================
+   Chandrawati Group of Institutions
+   Professional College Website
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    line-height:1.6;
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    background:#003366;
+    color:#fff;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.logo p{
+    font-size:13px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/banner.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#003366;
+    padding:14px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Sections */
+
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+section h2{
+    font-size:36px;
+    color:#003366;
+    margin-bottom:25px;
+}
+
+/* Cards */
+
+.course-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    width:260px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin:15px 0;
+    color:#003366;
+}
+
+/* News */
+
+.news ul{
+    list-style:none;
+    max-width:700px;
+    margin:auto;
+}
+
+.news li{
+    background:white;
+    margin:15px 0;
+    padding:15px;
+    border-left:5px solid #003366;
+    text-align:left;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header .container{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero{
+    height:70vh;
+}
+
+.hero-content h1{
+    font-size:32px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+.card{
+    width:90%;
+}
+
+section h2{
+    font-size:28px;
+}
+
+}
