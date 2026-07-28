@@ -1,1 +1,30 @@
+/*=====================================================
+    TOAST NOTIFICATION
+======================================================*/
 
+.toast{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#003B8E;
+    color:#fff;
+    padding:15px 20px;
+    border-radius:8px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:.3s;
+    z-index:99999;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.toast.success{
+    background:#28a745;
+}
+
+.toast.error{
+    background:#dc3545;
+}
